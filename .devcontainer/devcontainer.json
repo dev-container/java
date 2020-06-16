@@ -13,6 +13,9 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"vscjava.vscode-java-pack",
+		"vscjava.vscode-spring-boot-dashboard",
+		"vscjava.vscode-spring-initializr",
+		"pivotal.vscode-spring-boot",
 		"ms-azuretools.vscode-docker",
 		"eamodio.gitlens"		
 	]
