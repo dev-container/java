@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.117.1/containers/java-8
 {
-	"name": "Java 8",
+	"name": "Java",
 	"dockerFile": "Dockerfile",
 
 	// Set *default* container specific settings.json values on container create.
@@ -22,6 +22,11 @@
 		"visualstudioexptteam.vscodeintellicode",
 		"ms-azuretools.vscode-docker",
 		"eamodio.gitlens"		
+	],
+
+	"mounts": [
+		"source=extensions,target=/root/.vscode-server/extensions,type=volume",
+		"source=m2,target=/root/.m2,type=volume",	
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
