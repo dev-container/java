@@ -15,3 +15,18 @@ Using Dockerfile from https://github.com/microsoft/vscode-dev-containers/tree/ma
 Using Gitpod workspace full `gitpod/workspace-full` https://github.com/gitpod-io/workspace-images/tree/master/full 
   - `FROM buildpack-deps:focal` - [Dockerfile](https://github.com/docker-library/buildpack-deps/tree/master/ubuntu/focal)
   - Ubuntu Focal based. 
+
+## SDKMAN
+
+Use SDKMAN! to change Java version
+
+See available Java versions
+```
+sdk list java
+```
+Install and set as default
+```
+sdk install java 8.0.252-amzn
+sdk install java 11.0.7-amzn
+sdk default java 11.0.7-amzn
+```
