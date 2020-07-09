@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ try-github-actions ]
+    branches: [ master ]
   pull_request:
-    branches: [ try-github-actions ]
+    branches: [ master ]
 
 jobs:
   push_to_registry:
