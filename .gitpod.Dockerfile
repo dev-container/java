@@ -1,7 +1,7 @@
 FROM gitpod/workspace-full
 
 RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
-             && sdk update && sdk install java 8.0.252-amzn && sdk default java 8.0.252-amzn"
+             && sdk update && sdk list java && sdk install java 8-amzn && sdk default java 8-amzn"
 
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
