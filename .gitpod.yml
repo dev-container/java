@@ -1,6 +1,10 @@
 image:
   file: .gitpod.Dockerfile
 
+vscode:
+  extensions:
+    - vivaxy.vscode-conventional-commits@1.10.1:ztHr0xX5hkfQilbTTFitFw==
+
 tasks:
   - init: 'echo "TODO: Replace with init/build command"'
     command: 'echo "TODO: Replace with command to start project"'
