@@ -24,9 +24,9 @@ See available Java versions
 ```
 sdk list java
 ```
-Install and set as default
+Install and set as default (current version)
 ```
-sdk install java 8.0.252-amzn
-sdk install java 11.0.7-amzn
-sdk default java 11.0.7-amzn
+sdk install java 8.0.262-amzn
+sdk install java 11.0.8-amzn
+sdk default java 11.0.8-amzn
 ```
