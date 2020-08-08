@@ -1,0 +1,27 @@
+name: update-version
+on: 
+  push:
+    paths:
+      - .gitpod.**
+      - .devcontainer/** 
+  pull_request:
+    paths: 
+      - .gitpod.**
+      - .devcontainer/** 
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - run: npm install
+      - name: Setup GIT
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          npm version patch -m "ci: Patch to %s"
+          git push
