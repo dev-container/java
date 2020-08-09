@@ -42,7 +42,8 @@ RUN set -ex; \
     #
     curl -fsSL "https://get.sdkman.io" | bash; \
     bash -c ". /root/.sdkman/bin/sdkman-init.sh \
-             && sdk install java 8.0.262-amzn \
+             && sdk list java \
+             && sdk install java 8.0.265-amzn \
              && sdk install java 11.0.8-amzn \
              && sdk default java 11.0.8-amzn \
              && sdk install maven \
